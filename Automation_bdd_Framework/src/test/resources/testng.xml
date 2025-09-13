@@ -1,0 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="MySuite" parallel="false">
+    <listeners>
+        <listener class-name="com.sourabh.framework.utils.ScreenshotUtil"/>
+    </listeners>
+    <test name="LoginTest">
+        <parameter name="browser" value="chrome"/>  <!-- or firefox, edge -->
+        <classes>
+            <class name="com.sourabh.framework.runners.Testrunner"/>  <!-- your runner -->
+        </classes>
+    </test>
+</suite>
